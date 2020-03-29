@@ -43,6 +43,9 @@ while True:
 
     status_list.append(status)
 
+    # save only the last 2
+    status_list=status_list[-2:]
+
     # compare the last 2 items in the list
     if status_list[-1]==1 and status_list[-2]==0:
         times.append(datetime.now())
